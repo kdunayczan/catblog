@@ -6,10 +6,4 @@ class PagesController < ApplicationController
   def about
   end
 
-  def new
-  end
-
-  def show
-  end
-
 end
