@@ -6,8 +6,16 @@ class BlogsController < ApplicationController
 
   def create
     @blog = Blog.new(blog_params)
-    @blog.save
-    redirect_to blogs_show(@blog)
+    if @blog.save
+      flash[:notice] = "Blog was successfully created"
+      redirect_to blog_path(@blog)
+    else
+      render 'new'
+    end
+  end
+
+  def show
+    @blog = Blog.find(params[:id])
   end
 
   private

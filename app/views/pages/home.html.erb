@@ -7,4 +7,14 @@
 <br/>
 <h2>Bloggy Blogs Home</h2>
 
+<ul>
+  <% @blogs.each do |blog| %>
+    <li>
+      <div>Blog <%= blog.id %></div>
+      <div><%= blog.title %></div>
+      <div><%= blog.description %></div>
+    </li>
+  <% end %>
+</ul>
+
 

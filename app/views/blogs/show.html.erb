@@ -5,5 +5,9 @@
 <%= link_to image_tag('new.png', width: '40'), controller: "blogs", action: "new" %>
 <hr>
 <br/>
-<h2>Blog <%=  %> by: <%= %></h2>
+<h2>Blog <%= @blog.id %> by: <%= %></h2>
+
+<p><%= @blog.title %></p>
+<p><%= @blog.body %></p>
+
 
