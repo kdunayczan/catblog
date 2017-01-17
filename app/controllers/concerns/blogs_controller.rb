@@ -4,6 +4,10 @@ class BlogsController < ApplicationController
     @blog = Blog.new
   end
 
+  def edit
+    @blog = Blog.find(params[:id])
+  end
+
   def create
     @blog = Blog.new(blog_params)
     if @blog.save
@@ -16,6 +20,16 @@ class BlogsController < ApplicationController
 
   def show
     @blog = Blog.find(params[:id])
+  end
+
+  def update
+    @blog = Blog.find(params[:id])
+    if @blog.update(blog_params)
+      flash[:notice] = "Blog was successfully updated"
+      redirect_to blog_path(@blog)
+    else
+      render 'update'
+    end
   end
 
   private
