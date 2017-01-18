@@ -1,20 +1,16 @@
-<h1>Bloggy Blogs</h1>
+<h1>Welcome to Project #1</h1>
+<h3>By: Katie Dunayczan</h3>
 <hr>
-<%= link_to image_tag('home.svg', width: '40'), root_path %>
-<%= link_to image_tag('about.svg', width: '40'), about_path %>
-<%= link_to image_tag('new.png', width: '40'), controller: "blogs", action: "new" %>
-<hr>
-<br/>
-<h2>Bloggy Blogs Home</h2>
-
+<h2>Blog App</h2>
+<p>This app has been made with Ruby on Rails.</p>
+<p>List of skills learned through making this app:</p>
 <ul>
-  <% @blogs.each do |blog| %>
-    <li>
-      <div>Blog <%= blog.id %></div>
-      <div><%= blog.title %></div>
-      <div><%= blog.description %></div>
-    </li>
-  <% end %>
+  <li>Models</li>
+  <li>Migrations</li>
+  <li>Validations</li>
+  <li>Controllers</li>
+  <li>Views</li>
+  <li>Partials</li>
 </ul>
 
-
+<div><%= link_to 'View Blog App', blogs_path %></div>

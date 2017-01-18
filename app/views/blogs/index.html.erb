@@ -1,26 +1,11 @@
-<h1>Bloggy Blogs</h1>
-<hr>
-<div>
-  <%= link_to image_tag('home.svg', width: '40'), blogs_path %>
-  <%= link_to image_tag('about.svg', width: '40'), about_path %>
-  <%= link_to image_tag('new.png', width: '40'), controller: "blogs", action: "new" %>
-</div>
-<hr>
-<br/>
+<%= render 'nav' %>
+
 <h2>Bloggy Blogs Home</h2>
 
-<ul>
-  <% @blogs.each do |blog| %>
-    <li>
-      <div><%= blog.title %></div>
-      <div><%= blog.description %></div>
-      <div><%= link_to 'Edit', edit_blog_path(blog) %> |
-      <%= link_to 'Show Full Blog', blog_path(blog) %></div>
-    </li>
-  <% end %>
-</ul>
+<%= render 'list' %>
+<%= render 'overview' %>
 
-<%= link_to image_tag('goback.png', width: '40'), blogs_path %>
+
 
 
 
