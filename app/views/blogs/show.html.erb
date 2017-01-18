@@ -1,8 +1,10 @@
 <h1>Bloggy Blogs</h1>
 <hr>
-<%= link_to image_tag('home.svg', width: '40'), root_path %>
-<%= link_to image_tag('about.svg', width: '40'), about_path %>
-<%= link_to image_tag('new.png', width: '40'), controller: "blogs", action: "new" %>
+<div>
+  <%= link_to image_tag('home.svg', width: '40'), blogs_path %>
+  <%= link_to image_tag('about.svg', width: '40'), about_path %>
+  <%= link_to image_tag('new.png', width: '40'), controller: "blogs", action: "new" %>
+</div>
 <hr>
 <br/>
 <h2>Blog <%= @blog.id %> by: <%= %></h2>
@@ -10,4 +12,6 @@
 <p><%= @blog.title %></p>
 <p><%= @blog.body %></p>
 
-
+<div><%= link_to 'Edit this Blog', edit_blog_path(@blog) %></div>
+<br/>
+<div><%= link_to image_tag('goback.png', width: '40'), blogs_path %></div>
