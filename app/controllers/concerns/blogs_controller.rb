@@ -1,5 +1,7 @@
 class BlogsController < ApplicationController
 
+  before_action :set_blog, only: [:edit, :update, :show, :destroy]
+
   def index
     @blogs = Blog.all
   end
@@ -9,7 +11,6 @@ class BlogsController < ApplicationController
   end
 
   def edit
-    @blog = Blog.find(params[:id])
   end
 
   def create
@@ -22,19 +23,7 @@ class BlogsController < ApplicationController
     end
   end
 
-  def show
-    @blog = Blog.find(params[:id])
-  end
-
-  def destroy
-    @blog = Blog.find(params[:id])
-    @blog.destroy
-    flash[:notice] = "Blog was successfully deleted"
-    redirect_to blogs_path
-  end
-
   def update
-    @blog = Blog.find(params[:id])
     if @blog.update(blog_params)
       flash[:notice] = "Blog was successfully updated"
       redirect_to blog_path(@blog)
@@ -43,7 +32,20 @@ class BlogsController < ApplicationController
     end
   end
 
+  def show
+  end
+
+  def destroy
+    @blog.destroy
+    flash[:notice] = "Blog was successfully deleted"
+    redirect_to blogs_path
+  end
+
   private
+    def set_blog
+      @blog = Blog.find(params[:id])
+    end
+
     def blog_params
       params.require(:blog).permit(:title, :description, :body)
     end
