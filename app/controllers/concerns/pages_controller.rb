@@ -4,7 +4,4 @@ class PagesController < ApplicationController
     @blogs = Blog.all
   end
 
-  def about
-  end
-
 end
