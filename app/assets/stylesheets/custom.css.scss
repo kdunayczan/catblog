@@ -12,6 +12,17 @@ $navbar-default-bg: #2471A3;
   border-right: 3px solid #F1948A;
 }
 
+.alert-success {
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 70px;
+  list-style: none;
+}
+
+.alert-danger {
+  list-style: none;
+}
+
 body {
   background-image: url('crumpledpaper.jpg');
   background-size: cover;
@@ -75,6 +86,7 @@ small {
 
 .welcome-jumbotron {
   padding-top: 10px;
+  margin-top: 50px;
   margin-left: 200px;
   margin-right: 200px;
   background-color: #F2F4F4;

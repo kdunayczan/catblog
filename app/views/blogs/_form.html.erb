@@ -1,7 +1,7 @@
 <div class="border form-jumbotron">
   <% if @blog.errors.any? %>
     <div class="alert alert-danger" role="alert">
-      <ul>
+      <ul class="alert-danger">
         <% @blog.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
         <% end %>
