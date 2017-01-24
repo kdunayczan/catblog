@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20170117192555) do
 
-  create_table "blogs", force: :cascade do |t|
+  create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
     t.text     "body"

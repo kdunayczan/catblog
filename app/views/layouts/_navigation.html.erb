@@ -8,17 +8,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to 'Bloggy Blogs', blogs_path, class: "navbar-brand", id: "logo" %>
+      <%= link_to 'Cat Blogs', root_path, class: "navbar-brand", id: "logo" %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><%= link_to 'ABOUT', blogs_about_path, class: "navbar-links", id: "link"%></li>
-        <li><%= link_to 'NEW', new_blog_path, class: "navbar-links", id: "link"%></li>
+        <li><%= link_to 'ABOUT', pages_about_path, class: "navbar-links", id: "link"%></li>
+        <li><%= link_to 'BLOGS', pages_blogs_path, class: "navbar-links", id: "link"%></li>
+        <li><%= link_to 'POSTS', posts_path, class: "navbar-links", id: "link"%></li>
+        <li><%= link_to 'NEW', new_post_path, class: "navbar-links", id: "link"%></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to 'Back to Project Overview', root_path, class: "navbar-links", id: "link"%></li>
+        <li><%= link_to 'SIGN IN', root_path, class: "navbar-links", id: "link"%></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

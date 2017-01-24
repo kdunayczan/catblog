@@ -1,5 +1,3 @@
-$navbar-default-bg: #2471A3;
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -8,8 +6,7 @@ $navbar-default-bg: #2471A3;
 }
 
 .border {
-  border-bottom: 3px solid #F1948A;
-  border-right: 3px solid #F1948A;
+  box-shadow: -1px 5px 10px 1px #2C3030;
 }
 
 .alert-success {
@@ -24,8 +21,11 @@ $navbar-default-bg: #2471A3;
 }
 
 body {
-  background-image: url('crumpledpaper.jpg');
-  background-size: cover;
+  background: linear-gradient(#4CAC67, #DFFCFE);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
 }
 
 #back-link {
@@ -36,18 +36,38 @@ body {
   margin-left: 20px;
 }
 
+.img-responsive {
+  float: right;
+}
+
+.paw {
+  float: left;
+  margin-top: 20px;
+  margin-left: -180px;
+  width: 200px;
+}
+
 ///Navigation///
 
-.navbar {
-  border-bottom: 6px solid #F1948A;
+.navbar-default {
+  background-color: #2C3030;
+  height: 80px;
+  border-color: #2C3030;
+}
+
+.navbar-nav {
+  margin-top: 15px;
 }
 
 #logo {
+  padding: 15px 15px 15px 0px;
+  margin: 15px 0px 0px 10px;
   font-family: 'Roboto Condensed', sans-serif;
   float: left;
   font-size: 2em;
-  color: #F2F4F4;
-  letter-spacing: -1px;
+  color: #39C552;
+  text-shadow: 1px 1px #000;
+  letter-spacing: -0.5px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -55,7 +75,7 @@ body {
 #link, #link:hover {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1em;
-  color: #F2F4F4;
+  color: #FAFAF9;
   letter-spacing: 1px;
   text-decoration: none;
 }
@@ -86,132 +106,122 @@ small {
 
 .welcome-jumbotron {
   padding-top: 10px;
-  margin-top: 50px;
-  margin-left: 200px;
-  margin-right: 200px;
-  background-color: #F2F4F4;
-  opacity: 0.75;
-  border-bottom: 3px solid #F1948A;
-  border-right: 3px solid #F1948A;
+  margin: 50px 200px 0px 200px;
+  background-color: #FAFAF9;
+  border-radius: 10px;
 }
 
 .home-jumbotron {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-bottom: 20px;
-  background-color: #F2F4F4;
-  opacity: 0.75;
-  border-bottom: 3px solid #F1948A;
-  border-right: 3px solid #F1948A;
+  padding: 20px 0px 20px 0px;
+  margin: 20px 200px 20px 200px;
+  background-color: #FAFAF9;
+  border-radius: 10px;
 }
 
 .list-jumbotron {
-  padding-bottom: 10px;
-  padding-left: 25px;
-  padding-top: 1px;
-  margin-left: 80px;
-  margin-right: 75px;
-  margin-bottom: 25px;
-  background-color: #F2F4F4;
-  opacity: 0.75;
-  border-bottom: 3px solid #F1948A;
-  border-right: 3px solid #F1948A;
+  padding: 1px 0px 10px 25px;
+  margin: 0px 75px 25px 80px;
+  background-color: #FAFAF9;
+  border-radius: 30px 10px;
 }
 
 .about-jumbotron {
   padding:20px;
-  margin-left: 80px;
-  margin-right: 75px;
-  margin-bottom: 10px;
-  background-color: #F2F4F4;
-  opacity: 0.75;
-  border-bottom: 3px solid #F1948A;
-  border-right: 3px solid #F1948A;
+  margin: 0px 75px 10px 80px;
+  background-color: #FAFAF9;
+  border-radius: 10px;
 }
 .show-jumbotron {
   padding: 20px;
-  margin-top: 30px;
-  margin-left: 80px;
-  margin-right: 75px;
-  background-color: #F2F4F4;
-  opacity: 0.75;
-  border-bottom: 3px solid #F1948A;
-  border-right: 3px solid #F1948A;
+  margin: 30px 75px 0px 80px;
+  background-color: #FAFAF9;
+  border-radius: 10px;
 }
 
 .contact-jumbotron {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-bottom: 20px;
-  background-color: #F2F4F4;
-  opacity: 0.75;
-  border-bottom: 3px solid #F1948A;
-  border-right: 3px solid #F1948A;
+  padding: 20px 0px 20px 0px;
+  margin: 20px 200px 20px 200px;
+  background-color: #FAFAF9;
+  border-radius: 10px;
 }
 
 .form-jumbotron {
   padding-top: 20px;
-  margin-top: 30px;
-  margin-left: 80px;
-  margin-right: 70px;
-  margin-bottom: 30px;
-  background-color: #F2F4F4;
-  opacity: 0.75;
-  border-bottom: 3px solid #F1948A;
-  border-right: 3px solid #F1948A;
+  margin: 30px 70px 30px 80px;
+  background-color: #FAFAF9;
+  border-radius: 10px;
+}
+
+.blogs-jumbotron {
+  padding: 1px 0px 10px 25px;
+  margin: 20px 75px 25px 80px;
+  background-color: #FAFAF9;
+  border-radius: 30px 10px;
 }
 
 ///Buttons///
 
-.btn-primary, .btn-primary:hover {
-  color: #F2F4F4;
+.btn-primary {
+  color: #FAFAF9;
   background-color: #2471A3;
+  border-color: #2471A3;
   margin-bottom: 10px;
+  box-shadow: 0.5px 0.5px 0px 1px #2C3030;
+  text-shadow: 0.5px 0.5px #2C3030;
 }
 
-.btn-default, .btn-default:hover {
-  color: #F2F4F4;
-  background-color: #2471A3;
+.btn-default {
+  color: #FAFAF9;
+  background-color: #39C552;
+  border-color: #39C552;
   margin-bottom: 10px;
+  box-shadow: 0.5px 0.5px 0px 1px #2C3030;
+  text-shadow: 0.5px 0.5px #2C3030;
 }
 
 .btn-success, .btn-danger {
+  color: #FAFAF9;
   margin-bottom: 10px;
+  box-shadow: 0.5px 0.5px 0px 1px #2C3030;
+  text-shadow: 0.5px 0.5px #2C3030;
 }
 
 ///Text///
 
 h1 {
-  color: #17202A;
+  color: #1B1E1E;
+  text-shadow: 1px 1px #C9D6CD;
   font-size: 3.5em;
   letter-spacing: -1px;
   font-weight: bold;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-h3 {
-  color: #17202A;
+h2 {
+  color: #1B1E1E;
+  text-shadow: 0.5px 0.5px #C9D6CD;
   font-size: 2em;
   letter-spacing: -1px;
   font-weight: bold;
   font-family: 'Droid Sans', sans-serif;
 }
 
+h3 {
+  color: #2C3030;
+  font-size: 1.75em;
+  letter-spacing: -1px;
+  font-family: 'Droid Sans', sans-serif;
+}
+
 p {
-  color: #0E0E0E;
+  color: #2C3030;
   font-size: 1.25em;
   text-decoration: none;
   font-family: 'Droid Sans', sans-serif;
 }
 
 .form-text {
-  color: #17202A;
+  color: #2C3030;
   font-size: 1.25em;
   font-family: 'Droid Sans', sans-serif;
 }
@@ -219,14 +229,14 @@ p {
 #back-link {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.25em;
-  color: #17202A;
+  color: #2C3030;
   letter-spacing: 1px;
 }
 
 #footer-link, #footer-link:hover, small {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.20em;
-  color: #17202A;
+  color: #2C3030;
   letter-spacing: 1px;
 }
 
