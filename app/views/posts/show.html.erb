@@ -1,5 +1,5 @@
 <h1 class="center"><%= @post.title %></h1>
-<h2 class="center"><%= truncate(@post.description, length: 50) %></h2>
+<h2 class="center"><%= @post.description %></h2>
 
 <div class="styles border center show-jumbotron">
   <p><%= simple_format(@post.body) %></p>

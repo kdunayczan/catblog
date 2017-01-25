@@ -1,8 +1,13 @@
 <div>
   <% @posts.each do |post| %>
     <div class="styles border list-jumbotron">
-      <h3><%= post.title %></h3>
-      <p><%= post.description %></p>
+        <h3><%= post.title %></h3>
+        <p><%= truncate(post.description, length: 50) %></p>
+        <div class="post-meta-details">
+          <small>
+            Created By: <%= post.user.username if post.user %>, <%= time_ago_in_words(post.created_at) %> ago
+          </small>
+        </div>
       <br/>
       <div>
         <%= link_to 'Read', post_path(post), class: "btn btn-xs btn-success" %>
