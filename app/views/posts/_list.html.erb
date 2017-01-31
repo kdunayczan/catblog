@@ -1,5 +1,5 @@
 <div>
-  <% @posts.each do |post| %>
+  <% obj.each do |post| %>
     <div class="styles border list-jumbotron">
         <p class="title"><%= post.title %></p>
         <p><%= truncate(post.description, length: 50) %></p>
