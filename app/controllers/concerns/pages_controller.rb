@@ -9,8 +9,4 @@ class PagesController < ApplicationController
   def contact
   end
 
-  def blogs
-  	@users = User.all
-  end
-
 end

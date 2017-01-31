@@ -1,0 +1,15 @@
+<h1 class="center">Cat Blogs Home</h1>
+<h2 class="center">All Cat Bloggers:</h2>
+
+<div>
+  <% @users.each do |user| %>
+    <div class="styles border blogs-jumbotron">
+      <h3><%= link_to user.username, user_path(user) %></h3>
+      <p><%= pluralize(user.posts.count, "post") %></p>
+      <% if user.posts.size > 0 %>
+      	<small>Last post written <%= time_ago_in_words(user.posts.last.created_at) %> ago</small>
+      	<br/><br/>
+      <% end %>
+    </div>
+  <% end %>
+</div>
