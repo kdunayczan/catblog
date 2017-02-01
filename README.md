@@ -1,8 +1,7 @@
 # Cat Blogs
 
 #### Welcome to Project #1
->This app has been made with Ruby on Rails.
->*By: Katie Dunayczan*
+This app has been made with Ruby on Rails.
 
 List of skills learned through making this app: 
 - HTML and CSS
