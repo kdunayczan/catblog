@@ -27,7 +27,7 @@
 }
 
 body {
-  background-image: url("catwallpaper.jpg");
+  background-image: url(asset_path('catwallpaper.jpg'));
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
