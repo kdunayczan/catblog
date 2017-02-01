@@ -5,6 +5,5 @@
 		<%= gravatar_for @user, size: 150 %>
 	</div>
 </div>
-
-<h2 class="center">All Posts by: <%= @user.username %></h2>
+<h2 class="center"><%= pluralize(@user.posts.count, "post") %></h2>
 <%= render 'posts/list', obj: @user.posts %>

@@ -5,7 +5,7 @@
         <p><%= truncate(post.description, length: 50) %></p>
         <div class="post-meta-details">
           <small>
-            Created By: <%= post.user.username if post.user %>, <%= time_ago_in_words(post.created_at) %> ago
+            Created By: <%= link_to post.user.username, user_path(post.user), class: "user_link" %>, <%= time_ago_in_words(post.created_at) %> ago
           </small>
         </div>
       <br/>
