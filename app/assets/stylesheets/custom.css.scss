@@ -166,18 +166,11 @@ p {
   font-family: 'Droid Sans', sans-serif;
 }
 
-.user_link, .back_link {
-  color: #1B1E1E;
+.user_link {
+  color: #2C3030; 
 }
 
-#back-link {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.25em;
-  color: #2C3030;
-  letter-spacing: 1px;
-}
-
-#footer-link, #footer-link:hover, small {
+#footer-link, #footer-link:hover, small, .back_link {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.20em;
   color: #2C3030;

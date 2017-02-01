@@ -6,4 +6,10 @@
 	</div>
 </div>
 <h2 class="center"><%= pluralize(@user.posts.count, "post") %></h2>
-<%= render 'posts/list', obj: @user.posts %>
+<div align="center">
+	<%= will_paginate @user_posts %>
+</div>
+<%= render 'posts/list', obj: @user_posts %>
+<div align="center">
+	<%= will_paginate @user_posts %>
+</div>
