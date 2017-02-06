@@ -37,29 +37,21 @@ body {
   float: left;
 }
 
-.welcome-jumbotron {
-  height: 500px;
-  background-repeat: no-repeat;
-  background-image: url(asset_path('time.jpg'));
-  background-size: contain;
-  background-position: center;
-}
-
 ///Navigation///
 
 .navbar-default {
   background-color: #2C3030;
   border-color: #2C3030;
-  box-shadow: 0px 1px 1px 4px #AED6F1; 
+  box-shadow: 0px 1px 1px 4px #85C1E9; 
   border-radius: 0px;
 }
 
 #logo {
   font-family: 'Roboto Condensed', sans-serif;
   float: left;
-  font-size: 2em;
-  color: #AED6F1;
-  letter-spacing: -0.5px;
+  font-size: 1.25em;
+  color: #85C1E9;
+  letter-spacing: 1px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -70,6 +62,20 @@ body {
   color: #FAFAF9;
   letter-spacing: 1px;
   text-decoration: none;
+}
+
+//Jumbotrons//
+
+.welcome-jumbotron {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-image: url(asset_path('time.jpg'));
+  background-size: contain;
+  background-position: center;
+}
+
+.blogs-jumbotron, .list-jumbotron {
+  margin: 0px 225px 20px 225px;
 }
 
 ///Footer///
