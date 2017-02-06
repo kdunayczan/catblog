@@ -17,7 +17,7 @@ class UsersController < ApplicationController
 		@user = User.new(user_params)
 		if @user.save
 			flash[:success] = "Welcome to Cat Blogs #{@user.username}"
-			redirect_to posts_path
+			redirect_to user_path(@user)
 		else
 			render 'new'
 		end
@@ -26,7 +26,7 @@ class UsersController < ApplicationController
 	def update
 		if @user.update(user_params)
 			flash[:success] = "Your account was updated successfully"
-			redirect_to posts_path
+			redirect_to user_path(@user)
 		else
 			render 'edit'
 		end

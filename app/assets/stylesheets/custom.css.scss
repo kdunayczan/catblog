@@ -37,6 +37,14 @@ body {
   float: left;
 }
 
+.welcome-jumbotron {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-image: url(asset_path('time.jpg'));
+  background-size: contain;
+  background-position: center;
+}
+
 ///Navigation///
 
 .navbar-default {
@@ -111,10 +119,6 @@ body {
   margin: 0px 5px 10px 0px;
   box-shadow: 0.5px 0.5px 0px 1px #2C3030;
   text-shadow: 0.5px 0.5px #2C3030;
-}
-
-.btn-lg {
-  margin-right: 40px;
 }
 
 ///Text///

@@ -1,21 +1,8 @@
 # Cat Blogs
 
-#### Welcome to Project #1
-*This app has been made with Ruby on Rails.*
+**Welcome!**
+*A place for cat lovers*
 
-List of skills learned through making this app: 
-- HTML and CSS
-- Ruby
-- Embedded Ruby
-- Models
-- Views
-- Controllers
-- Migrations
-- Validations
-- Associations
-- Active Record
-- Partials
-- Styling with Bootstrap
-- Pagination
+Cat Blogs was made for people who love sharing stories about their cats. It is a work in progress and more features are being added all the time. Please sign up and start blogging!
 
-##### [Open App](https://cat-blog-kt.herokuapp.com/)
+### [Sign Up](https://cat-blog-kt.herokuapp.com/)
