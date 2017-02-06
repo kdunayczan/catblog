@@ -64,6 +64,10 @@ body {
   text-decoration: none;
 }
 
+#link:active, #link:hover {
+  background-color: #6B6E6E;
+}
+
 //Jumbotrons//
 
 .welcome-jumbotron {
@@ -162,7 +166,12 @@ p {
 }
 
 .title {
+  color: #2C3030; 
   text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.75em;
+  letter-spacing: 0.5px;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 .post-meta-details {
@@ -182,6 +191,10 @@ p {
 
 .user_link {
   color: #2C3030; 
+}
+
+.title:hover, .user_link:hover {
+  text-decoration: none;
 }
 
 .sign_up {

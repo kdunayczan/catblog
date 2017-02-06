@@ -1,21 +1,24 @@
 <div>
   <% obj.each do |post| %>
     <div class="styles border list-jumbotron">
-        <p class="title"><%= post.title %></p>
-        <p><%= truncate(post.description, length: 50) %></p>
+        <div>
+        <%= link_to post.title, post_path(post), class: "title" %>
+        </div>
+        <p>- <%= truncate(post.description, length: 50) %></p>
         <div class="post-meta-details">
           <small>
             Created By: <%= link_to post.user.username, user_path(post.user), class: "user_link" %>, <%= time_ago_in_words(post.created_at) %> ago
           </small>
         </div>
       <br/>
-      <div>
-        <%= link_to 'Read', post_path(post), class: "btn btn-xs btn-success" %>
-        <%= link_to 'Edit', edit_post_path(post), class: "btn btn-xs btn-primary" %>
-        <%= link_to 'Delete', post_path(post),
+      <% if logged_in?  && current_user == post.user %>
+        <div>
+          <%= link_to 'Edit', edit_post_path(post), class: "btn btn-xs btn-primary" %>
+          <%= link_to 'Delete', post_path(post),
                               method: :delete, data: {confirm: "Are you sure?"},
                               class: "btn btn-xs btn-danger" %>
-      </div>
+        </div>
+      <% end %>
     </div>
   <% end %>
 </div>
