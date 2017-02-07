@@ -4,7 +4,7 @@
 <div class="styles border show-jumbotron">
   <p><%= simple_format(@post.body) %></p>
   <br/>
-  <% if logged_in? && current_user == @post.user %>
+  <% if logged_in? && (current_user == @post.user || current_user.admin?) %>
 	  <div class="center">
 	  	<%= link_to 'Edit', edit_post_path(@post), class: "btn btn-default btn-sm"%>
 	  	<%= link_to 'Delete', post_path(@post), method: :delete, 

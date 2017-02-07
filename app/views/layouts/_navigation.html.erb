@@ -30,7 +30,7 @@
         <% if logged_in? %>
           <li><%= link_to 'LOG OUT', logout_path, method: :delete, class: "navbar-links", id: "link"%></li>
           <li class="dropdown">
-            <a href="#" class="navbar-links dropdown-toggle" id="link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">YOUR PROFILE<span class="caret"></span></a>
+            <a href="#" class="navbar-links dropdown-toggle" id="link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">YOUR PROFILE <%= "(admin)" if current_user.admin? %><span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li id="link"><%= link_to "Edit your profile", edit_user_path(current_user) %></li>
               <li id="link"><%= link_to "View your profile", user_path(current_user) %></li>
