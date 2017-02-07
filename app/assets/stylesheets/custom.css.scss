@@ -196,11 +196,12 @@ p {
   letter-spacing: 1px;
 }
 
-#footer-link, #footer-link:hover, small, .back_link {
+#footer-link, #footer-link:hover, small, .back_link, .delete-user {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.20em;
   color: #2C3030;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 #back-link {
