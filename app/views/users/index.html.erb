@@ -1,4 +1,4 @@
-<h1 class="center">Cat-agorically Blogging</h1>
+<h1 class="center">Cat-egorically Blogging</h1>
 <h2 class="center">All Bloggers:</h2>
 <div align="center">
   <%= will_paginate %>
@@ -9,7 +9,7 @@
       <h3><%= link_to user.username, user_path(user), class: "user_link" %></h3>
       <p><%= pluralize(user.posts.count, "post") %></p>
       <% if user.posts.size > 0 %>
-        <div class="post-meta-details">
+        <div class="last-post post-meta-details">
       	   <small>Last post written <%= time_ago_in_words(user.posts.last.created_at) %> ago</small>
         </div>
       	<br/>
